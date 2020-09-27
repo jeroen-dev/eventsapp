@@ -5,11 +5,17 @@ import './app/layout/styles.css';
 
 import App from './app/layout/App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from 'react-router-dom';
 
 const rootEl = document.getElementById('root');
 
 function render() {
-  ReactDOM.render(<App />, rootEl);
+  ReactDOM.render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
+    rootEl
+  );
 }
 
 if (module.hot) {
