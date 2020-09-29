@@ -10,6 +10,7 @@ export default function EventDetailedPage({ match }) {
   const event = useSelector((state) =>
     state.event.events.find((e) => e.id === match.params.id)
   );
+
   return (
     <Grid>
       <Grid.Column width={10}>
